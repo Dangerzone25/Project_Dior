@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060b14">
+  <meta name="description" content="An independent educational exploration of Dior Sauvage: a cinematic fragrance experience, four interpretations, and an interactive scent finder.">
+  <title>SAUVAGE | Beyond the Horizon — Independent Concept</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-progress" aria-hidden="true"><span id="page-progress-bar"></span></div>
+
+  <header class="site-header" id="site-header">
+    <a href="#discover" class="brand" aria-label="Sauvage concept, home">
+      <span class="brand-house">DIOR</span>
+      <span class="brand-divider" aria-hidden="true"></span>
+      <span class="brand-fragrance">SAUVAGE</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#discover" class="nav-link is-active" data-nav="discover">Discover</a>
+      <a href="#fragrance" class="nav-link" data-nav="fragrance">The Fragrance</a>
+      <a href="#collection" class="nav-link" data-nav="collection">Collection</a>
+      <a href="#details" class="nav-link" data-nav="details">Details</a>
+    </nav>
+    <a class="header-explore" href="#finder">FIND YOUR SCENT <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+      <a href="#discover">Discover</a><a href="#fragrance">The Fragrance</a><a href="#collection">Collection</a><a href="#details">Details</a><a href="#finder">Find Your Scent</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- SECTION A: Opening campaign visual -->
+    <section class="hero section-observed" id="discover" aria-labelledby="hero-title">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="night-stars" aria-hidden="true"></div>
+      <div class="hero-mountain back" aria-hidden="true"></div>
+      <div class="hero-mountain front" aria-hidden="true"></div>
+      <div class="hero-vertical" aria-hidden="true">AN EXPLORATION OF THE UNBOUND</div>
+      <div class="hero-copy container">
+        <p class="eyebrow hero-enter">THE WORLD OF SAUVAGE <span class="eyebrow-line"></span> 01 / 04</p>
+        <h1 id="hero-title" class="hero-enter">BORN<br>IN THE<br><em>WILD.</em></h1>
+        <p class="hero-description hero-enter">The raw beauty of nature. The power of a timeless fragrance.</p>
+        <div class="hero-actions hero-enter">
+          <a class="button button-light" href="#fragrance">DISCOVER THE FRAGRANCE <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="#collection">EXPLORE THE COLLECTION <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-product hero-enter" aria-label="Sauvage Eau de Parfum conceptual bottle presentation">
+        <div class="hero-orbit" aria-hidden="true"></div>
+        <div class="bottle-visual bottle-hero" data-bottle="edp" role="img" aria-label="Sauvage Eau de Parfum bottle; stylized illustration used if product photo cannot load">
+          <div class="bottle-fallback" aria-hidden="true"><span class="bottle-cap"></span><span class="bottle-body"><span class="bottle-label">SAUVAGE</span><span class="bottle-concentration">EAU DE PARFUM</span><span class="bottle-foot">DIOR</span></span></div>
+          <img class="product-photo" alt="Dior Sauvage Eau de Parfum perfume bottle" loading="eager">
+        </div>
+        <span class="hero-product-caption">EAU DE PARFUM <span aria-hidden="true">·</span> THE MAGIC HOUR</span>
+      </div>
+      <a class="scroll-cue" href="#story"><span class="scroll-cue-line"></span>SCROLL TO EXPLORE</a>
+      <span class="hero-index" aria-hidden="true">01 <span>/</span> 06</span>
+    </section>
+
+    <!-- SECTION B: Story -->
+    <section class="story section-pad section-observed" id="story" aria-labelledby="story-title">
+      <div class="container story-grid">
+        <div class="story-visual reveal">
+          <div class="story-landscape" aria-label="Atmospheric mountain and desert landscape"></div>
+          <div class="story-visual-overlay" aria-hidden="true"><span>THE EDGE OF EVERYTHING.</span><span>EST. IN THE WILD</span></div>
+          <span class="story-outline-text" aria-hidden="true">WILD</span>
+        </div>
+        <div class="story-content">
+          <p class="eyebrow reveal">01 &nbsp; / &nbsp; THE STORY</p>
+          <h2 id="story-title" class="display-title reveal">THE WILD<br>HAS A <em>SCENT.</em></h2>
+          <div class="thin-rule reveal"></div>
+          <p class="story-lead reveal">A horizon with no end. The final light of day. The freedom to be nothing but yourself.</p>
+          <p class="body-muted reveal">Sauvage draws on the contrast between rugged landscapes and open skies. Vibrant freshness meets distinctive depth, evoking an untamed, quietly confident spirit.</p>
+          <a class="text-link reveal" href="#fragrance">EXPLORE THE SCENT <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION C: Note discovery -->
+    <section class="notes section-pad section-observed" id="fragrance" aria-labelledby="notes-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">02 &nbsp; / &nbsp; THE FRAGRANCE</p><h2 id="notes-title" class="display-title">A STUDY IN<br><em>CONTRAST.</em></h2></div>
+          <p class="section-intro">Explore the olfactory journey of <strong>Sauvage Elixir</strong>, from its bright opening to its enveloping woody trail.</p>
+        </div>
+        <div class="notes-layout reveal">
+          <div class="note-tabs" role="tablist" aria-label="Sauvage Elixir fragrance notes">
+            <button class="note-tab is-selected" role="tab" id="tab-top" aria-selected="true" aria-controls="note-panel" data-note="top" tabindex="0"><span class="note-number">01</span><span>TOP NOTES</span><span aria-hidden="true" class="note-arrow">↗</span></button>
+            <button class="note-tab" role="tab" id="tab-heart" aria-selected="false" aria-controls="note-panel" data-note="heart" tabindex="-1"><span class="note-number">02</span><span>HEART NOTES</span><span aria-hidden="true" class="note-arrow">↗</span></button>
+            <button class="note-tab" role="tab" id="tab-base" aria-selected="false" aria-controls="note-panel" data-note="base" tabindex="-1"><span class="note-number">03</span><span>BASE NOTES</span><span aria-hidden="true" class="note-arrow">↗</span></button>
+          </div>
+          <div class="note-panel" role="tabpanel" id="note-panel" aria-labelledby="tab-top" tabindex="0">
+            <div class="note-art" id="note-art" data-note-art="top" aria-hidden="true"><div class="note-art-inner"><span id="note-art-monogram">CITRUS</span></div><span class="note-art-index">01 / 03</span></div>
+            <div class="note-copy" aria-live="polite"><p class="eyebrow" id="note-stage">THE OPENING</p><h3 id="note-name">GRAPEFRUIT &amp; SPICES</h3><p id="note-description">A vibrant grapefruit accord meets the warmth of cinnamon and nutmeg, with an aromatic lift of cardamom.</p><p class="note-disclaimer">Selected note impressions of <strong>Sauvage Elixir</strong>, based on Dior's official description. Notes are not a formula or ingredient list.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION D: Switchable product experience -->
+    <section class="experience section-pad section-observed" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="experience-top reveal"><p class="eyebrow">03 &nbsp; / &nbsp; SIGNATURE EXPRESSIONS</p><h2 class="display-title" id="experience-title">ONE NAME.<br><em>FOUR WORLDS.</em></h2></div>
+        <div class="variant-tabs reveal" role="tablist" aria-label="Select a Sauvage variant">
+          <button type="button" class="variant-tab" role="tab" data-variant="edt" aria-selected="false" tabindex="-1">EAU DE TOILETTE</button>
+          <button type="button" class="variant-tab is-selected" role="tab" data-variant="edp" aria-selected="true" tabindex="0">EAU DE PARFUM</button>
+          <button type="button" class="variant-tab" role="tab" data-variant="parfum" aria-selected="false" tabindex="-1">PARFUM</button>
+          <button type="button" class="variant-tab" role="tab" data-variant="elixir" aria-selected="false" tabindex="-1">ELIXIR</button>
+        </div>
+        <div class="experience-grid reveal">
+          <div class="experience-display" id="experience-display" role="tabpanel" aria-label="Selected product visual">
+            <span class="display-side-label">THE SAUVAGE COLLECTION / 2026</span><div class="display-halo" aria-hidden="true"></div>
+            <div class="bottle-visual bottle-experience" id="experience-bottle" data-bottle="edp" role="img" aria-label="Sauvage Eau de Parfum bottle">
+              <div class="bottle-fallback" aria-hidden="true"><span class="bottle-cap"></span><span class="bottle-body"><span class="bottle-label">SAUVAGE</span><span class="bottle-concentration">EAU DE PARFUM</span><span class="bottle-foot">DIOR</span></span></div><img class="product-photo" alt="Dior Sauvage Eau de Parfum bottle" loading="lazy">
+            </div><span class="display-foot-label">THE ART OF CONTRAST</span>
+          </div>
+          <div class="experience-information" aria-live="polite">
+            <span class="product-series">DIOR / SAUVAGE COLLECTION</span><h3 id="product-title">SAUVAGE<br><em>EAU DE PARFUM</em></h3>
+            <p id="product-description">Fresh Calabrian bergamot meets warm vanilla and subtle smoky facets. An evocative interpretation of the desert at twilight.</p>
+            <div class="product-facts"><div><span>SCENT PROFILE</span><strong id="product-profile">Citrus · Vanilla · Warm</strong></div><div><span>KEY NOTES</span><strong id="product-notes">Bergamot / Vanilla extract</strong></div><div><span>VERIFIED BOTTLE SIZES*</span><strong id="product-sizes">30 / 60 / 100 / 200 mL</strong></div></div>
+            <div class="intensity-head"><span>ILLUSTRATIVE INTENSITY</span><span id="intensity-text">3 / 4</span></div><div class="intensity-bars" id="intensity-bars" role="img" aria-label="Illustrative intensity 3 out of 4"><span></span><span></span><span></span><span></span></div>
+            <p class="fine-print">*Sizes verified on Dior regional listings; offerings may vary by market. Intensity is an editorial guide, not an official metric.</p>
+            <div class="product-actions"><button class="button button-light" type="button" id="view-product-detail">EXPLORE THIS SCENT <span aria-hidden="true">↗</span></button><a class="text-link" id="official-product-link" href="https://www.dior.com/en_int/beauty/products/sauvage-eau-de-parfum-Y0785220.html" target="_blank" rel="noopener noreferrer">VIEW ON DIOR <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION E: Fragrance matching quiz -->
+    <section class="finder section-pad section-observed" id="finder" aria-labelledby="finder-title">
+      <div class="finder-background" aria-hidden="true"></div>
+      <div class="container finder-layout">
+        <div class="finder-heading reveal"><p class="eyebrow">04 &nbsp; / &nbsp; THE DISCOVERY</p><h2 id="finder-title" class="display-title">FIND YOUR<br><em>SAUVAGE.</em></h2><p>There is more than one way to leave an impression. Discover an expression that speaks to you.</p><span class="finder-smallprint">AN EDITORIAL SCENT GUIDE · 3 QUESTIONS</span></div>
+        <div class="quiz-shell reveal" id="quiz-shell">
+          <div class="quiz-head"><span>PERSONAL FRAGRANCE EDIT</span><span id="quiz-count">01 / 03</span></div>
+          <div class="quiz-progress" aria-hidden="true"><span id="quiz-progress-fill"></span></div>
+          <div class="quiz-question-area" id="quiz-question-area" aria-live="polite"><p class="eyebrow">QUESTION 01</p><h3 id="quiz-question">What kind of scent draws you in?</h3><div class="quiz-options" id="quiz-options"></div><p class="quiz-validation" id="quiz-validation" role="status"></p></div>
+          <div class="quiz-controls" id="quiz-controls"><button type="button" class="quiz-back" id="quiz-back" disabled>← PREVIOUS</button><button type="button" class="button button-light quiz-next" id="quiz-next">NEXT QUESTION <span aria-hidden="true">→</span></button></div>
+          <div class="quiz-result" id="quiz-result" hidden aria-live="polite"><p class="eyebrow">YOUR SAUVAGE EXPRESSION</p><h3 id="quiz-result-name">SAUVAGE EAU DE PARFUM</h3><p id="quiz-result-reason"></p><p class="fine-print">General suggestion based on your answers, not a guarantee of individual preference or performance.</p><div class="quiz-result-actions"><button type="button" class="button button-light" id="quiz-explore">EXPLORE YOUR MATCH ↗</button><button type="button" class="quiz-back" id="quiz-restart">↺ START AGAIN</button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION F: Gallery -->
+    <section class="collection section-pad section-observed" id="collection" aria-labelledby="collection-title">
+      <div class="container"><div class="section-heading reveal"><div><p class="eyebrow">05 &nbsp; / &nbsp; THE COLLECTION</p><h2 id="collection-title" class="display-title">THE SAUVAGE<br><em>CHAPTERS.</em></h2></div><p class="section-intro">Four distinctive interpretations, each with its own signature trail.</p></div>
+        <div class="collection-grid">
+          <article class="collection-card reveal" data-collection="edt"><span class="card-number">01 / SAUVAGE</span><div class="card-stage"><div class="bottle-visual bottle-card" data-bottle="edt" role="img" aria-label="Sauvage Eau de Toilette bottle"><div class="bottle-fallback" aria-hidden="true"><span class="bottle-cap"></span><span class="bottle-body"><span class="bottle-label">SAUVAGE</span><span class="bottle-concentration">EAU DE TOILETTE</span><span class="bottle-foot">DIOR</span></span></div><img class="product-photo" alt="Dior Sauvage Eau de Toilette bottle" loading="lazy"></div></div><p class="card-kicker">FRESH / CITRUS / WOODY</p><h3>EAU DE TOILETTE</h3><p>Bright, peppery freshness and a clean ambery trail.</p><button type="button" class="card-link" data-open-product="edt">EXPLORE <span aria-hidden="true">↗</span></button></article>
+          <article class="collection-card reveal" data-collection="edp"><span class="card-number">02 / SAUVAGE</span><div class="card-stage"><div class="bottle-visual bottle-card" data-bottle="edp" role="img" aria-label="Sauvage Eau de Parfum bottle"><div class="bottle-fallback" aria-hidden="true"><span class="bottle-cap"></span><span class="bottle-body"><span class="bottle-label">SAUVAGE</span><span class="bottle-concentration">EAU DE PARFUM</span><span class="bottle-foot">DIOR</span></span></div><img class="product-photo" alt="Dior Sauvage Eau de Parfum bottle" loading="lazy"></div></div><p class="card-kicker">CITRUS / VANILLA / WARM</p><h3>EAU DE PARFUM</h3><p>Vibrant bergamot with a smooth, smoky vanilla depth.</p><button type="button" class="card-link" data-open-product="edp">EXPLORE <span aria-hidden="true">↗</span></button></article>
+          <article class="collection-card reveal" data-collection="parfum"><span class="card-number">03 / SAUVAGE</span><div class="card-stage"><div class="bottle-visual bottle-card" data-bottle="parfum" role="img" aria-label="Sauvage Parfum bottle"><div class="bottle-fallback" aria-hidden="true"><span class="bottle-cap"></span><span class="bottle-body"><span class="bottle-label">SAUVAGE</span><span class="bottle-concentration">PARFUM</span><span class="bottle-foot">DIOR</span></span></div><img class="product-photo" alt="Dior Sauvage Parfum bottle" loading="lazy"></div></div><p class="card-kicker">CITRUS / TONKA / SANDALWOOD</p><h3>PARFUM</h3><p>A rounder, intimate warmth with creamy woods.</p><button type="button" class="card-link" data-open-product="parfum">EXPLORE <span aria-hidden="true">↗</span></button></article>
+          <article class="collection-card reveal" data-collection="elixir"><span class="card-number">04 / SAUVAGE</span><div class="card-stage"><div class="bottle-visual bottle-card" data-bottle="elixir" role="img" aria-label="Sauvage Elixir bottle"><div class="bottle-fallback" aria-hidden="true"><span class="bottle-cap"></span><span class="bottle-body"><span class="bottle-label">SAUVAGE</span><span class="bottle-concentration">ELIXIR</span><span class="bottle-foot">DIOR</span></span></div><img class="product-photo" alt="Dior Sauvage Elixir bottle" loading="lazy"></div></div><p class="card-kicker">SPICE / LAVENDER / WOODS</p><h3>ELIXIR</h3><p>Concentrated spice and lavender over rich woods.</p><button type="button" class="card-link" data-open-product="elixir">EXPLORE <span aria-hidden="true">↗</span></button></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION G: Practical details -->
+    <section class="details section-pad section-observed" id="details" aria-labelledby="details-title">
+      <div class="container details-layout"><div class="details-header reveal"><p class="eyebrow">06 &nbsp; / &nbsp; THE ESSENTIALS</p><h2 id="details-title" class="display-title">THE FINER<br><em>DETAILS.</em></h2><p>Designed to be experienced. Chosen to express a feeling.</p></div>
+        <div class="details-list reveal">
+          <div class="detail-row"><span class="detail-index">01</span><div><h3>FOUR INTERPRETATIONS</h3><p>Eau de Toilette, Eau de Parfum, Parfum, and Elixir each feature distinct scent signatures. Concentration alone does not describe how a fragrance smells.</p></div></div>
+          <div class="detail-row"><span class="detail-index">02</span><div><h3>CHOOSE FOR THE OCCASION</h3><p>For an editorial starting point: EDT for a brighter daily profile, EDP for versatility, Parfum for intimate evenings, and Elixir for bolder moments. These are suggestions, not rules.</p></div></div>
+          <div class="detail-row"><span class="detail-index">03</span><div><h3>HOW TO WEAR</h3><p>Apply lightly to clean skin, keeping spray away from eyes. Start with a modest amount, and avoid rubbing the fragrance immediately after application.</p></div></div>
+          <div class="detail-row"><span class="detail-index">04</span><div><h3>INDIVIDUAL EXPERIENCE</h3><p>Longevity and projection vary with skin, environment, weather, and application. Verified regional bottle sizes appear in the product selector above.</p></div></div>
+        </div></div>
+    </section>
+
+    <!-- SECTION H: Closing -->
+    <section class="closing section-observed" id="closing" aria-labelledby="closing-title"><div class="closing-sky" aria-hidden="true"></div><div class="closing-mountains" aria-hidden="true"></div><div class="container closing-inner reveal"><p class="eyebrow">THE HORIZON IS YOURS</p><h2 id="closing-title">MAKE THE<br><em>NIGHT YOURS.</em></h2><p>Discover the fragrance that expresses your own sense of freedom.</p><a class="button button-light" href="#collection">DISCOVER THE COLLECTION <span aria-hidden="true">↗</span></a></div><span class="closing-decoration" aria-hidden="true">S A U V A G E</span></section>
+  </main>
+
+  <!-- SECTION I: Footer -->
+  <footer class="site-footer"><div class="container footer-main"><div><a href="#discover" class="footer-brand">DIOR <span>SAUVAGE</span></a><p>An independent interpretation of the wild.</p></div><nav aria-label="Footer navigation"><a href="#discover">Discover</a><a href="#fragrance">The Fragrance</a><a href="#collection">Collection</a><a href="#details">Details</a></nav><button type="button" id="back-to-top" class="back-top">BACK TO TOP ↑</button></div><div class="container footer-bottom"><p>Independent educational concept created for academic purposes. Not an official Dior website and not affiliated with or endorsed by Christian Dior.</p><p>Product descriptions &amp; sizes: <a href="https://www.dior.com/en_int/beauty/sauvage-fragrance" target="_blank" rel="noopener noreferrer">Dior official collection</a>. Product images may require an internet connection; conceptual CSS visuals provide an offline fallback.</p><span>© 2026 · STUDENT CONCEPT</span></div></footer>
+
+  <!-- Accessible native modal: no external UI framework required. -->
+  <dialog class="product-dialog" id="product-modal" aria-labelledby="modal-title"><div class="dialog-layout"><button type="button" class="dialog-close" id="modal-close" aria-label="Close product details">✕</button><div class="dialog-art"><span class="dialog-eyebrow">THE SAUVAGE COLLECTION</span><div class="bottle-visual bottle-dialog" id="modal-bottle" data-bottle="edp" role="img" aria-label="Sauvage fragrance bottle"><div class="bottle-fallback" aria-hidden="true"><span class="bottle-cap"></span><span class="bottle-body"><span class="bottle-label">SAUVAGE</span><span class="bottle-concentration">EAU DE PARFUM</span><span class="bottle-foot">DIOR</span></span></div><img class="product-photo" alt="Dior Sauvage perfume bottle" loading="lazy"></div></div><div class="dialog-content"><span class="eyebrow">AN EXPRESSION OF SAUVAGE</span><h2 id="modal-title">EAU DE PARFUM</h2><p class="dialog-summary" id="modal-description"></p><h3>THE SIGNATURE</h3><p id="modal-character"></p><h3>AVAILABLE SIZES*</h3><p id="modal-sizes"></p><p class="fine-print">*Verified on Dior regional product pages; selection and supply depend on market. No shopping transaction takes place here.</p><a class="button button-light" id="modal-official" href="https://www.dior.com/en_int/beauty/products/sauvage-eau-de-parfum-Y0785220.html" target="_blank" rel="noopener noreferrer">VIEW OFFICIAL DIOR PAGE ↗</a></div></div></dialog>
+</body>
+</html>
